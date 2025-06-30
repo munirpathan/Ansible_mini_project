@@ -1,2 +1,2 @@
 [webservers]
-192.168.100.35 ansible_user=unixadmin ansible_password=Unix#1234 ansible_ssh_private_key_file=/tmp/ssh_host_rsa_key
+192.168.100.35 ansible_ssh_user=unixadmin ansible_ssh_pass=Unix#1234 ansible_ssh_private_key_file=/tmp/ssh_host_rsa_key
