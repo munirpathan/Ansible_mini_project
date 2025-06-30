@@ -1,0 +1,30 @@
+---
+- name: Install wget 
+  yum:
+    name: wget 
+    state: latest
+
+- name: Install OpenJDK  
+  yum:
+    name: java-1.8.0-openjdk.x86_64
+    state: latest
+
+- name: Creates directory
+  file:
+    path: /app
+    state: directory
+
+- name: Download Nexus tar.gz file
+  get_url:
+    url: "https://download.sonatype.com/nexus/3/nexus-3.66.0-02-unix.tar.gz"
+    dest: /app
+
+- name: Extract Nexus tar.gz file
+  unarchive:
+    src: /app/nexus-3.66.0-02-unix.tar.gz
+    dest: /app
+    remote_src: yes
+- name: Create nexus user
+  user:
+    name: nexus
+    state: present
