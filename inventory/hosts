@@ -1,2 +1,2 @@
 [webservers]
-inprj-iattst02 ansible_host=192.168.100.35 ansible_user=unixadmin
+192.168.100.35 ansible_user=unixadmin ansible_ssh_private_key_file=/etc/ssh/ssh_host_rsa_key
