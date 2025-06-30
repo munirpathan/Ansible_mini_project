@@ -1,2 +1,2 @@
 [webservers]
-ansible_host=192.168.100.35 ansible_user=unixadmin
+inprj-iattst02 ansible_host=192.168.100.35 ansible_user=unixadmin
