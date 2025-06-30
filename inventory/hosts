@@ -1,2 +1,2 @@
-[windows]
-cloud2 ansible_host=192.168.100.35 ansible_user=unixadmin
+[webservers]
+ansible_host=192.168.100.35 ansible_user=unixadmin
